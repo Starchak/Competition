@@ -1,9 +1,19 @@
+$gold: #D4AF37;
+$menuBackground: #2D3035;
+
 @mixin mainContent{
   width: 80%;
 }
 
 * {
   font-family: "Open Sans";
+}
+
+.menu {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: $menuBackground;
 }
 
 header {
@@ -26,6 +36,8 @@ header {
   
   nav {
     padding: 35px 35px 0 90%;
+    position: relative;
+    z-index: 100;
     
     a {
       color: #fff;
@@ -38,7 +50,7 @@ header {
   }
   
   > .title {
-    color: #ffffff;
+    color: #fff;
     font-size: 80px;
     font-weight: 400;
     text-align: center;

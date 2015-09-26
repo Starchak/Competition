@@ -1,6 +1,12 @@
 * {
   font-family: "Open Sans"; }
 
+.menu {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: #2D3035; }
+
 header .header-img {
   width: 100%;
   height: 100vh;
@@ -15,14 +21,16 @@ header .logo-img {
   padding: 25px;
   position: absolute; }
 header nav {
-  padding: 35px 35px 0 90%; }
+  padding: 35px 35px 0 90%;
+  position: relative;
+  z-index: 100; }
   header nav a {
     color: #fff;
     text-decoration: none; }
     header nav a:hover {
       text-decoration: underline; }
 header > .title {
-  color: #ffffff;
+  color: #fff;
   font-size: 80px;
   font-weight: 400;
   text-align: center;
