@@ -76,17 +76,26 @@ $menuBackground: #2D3035;
   }
 }
 
+.main-page-header {
+  background: url(img/cd-intro-bg.png) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.news-header {
+  background: url(img/Layer-1.png)no-repeat center;
+  background-size: cover;
+  height: 60vh;
+}
+
 header {
   width: 100%;
-    height: 100vh;
-    background: url(img/cd-intro-bg.png) no-repeat center;
-    background-size: cover;
   
   .logo-img {
     width: 190px;
     height: 42px;
     background: url(img/cd-logo.png) no-repeat center;
-    padding: 25px;
+    padding: 20px;
     position: fixed;
     z-index: 101;
   }
@@ -199,6 +208,106 @@ header {
       padding: 10px 5px;
     }
   }
+}
+
+.clear {
+  clear: both;
+}
+
+.news-section {
+  width: 90%;
+  margin: 50px auto;
+  padding: 25px 0;
+  background-color: #f9f9f9;
+  
+  .first-news {
+    width: 62%;
+    background-color: #fff;
+    margin: 0 4%;
+    float: left;
+  }
+  
+  .news-icon {
+      padding-top: 50px;
+      text-align: center;
+    }
+    
+    .news-content {
+      margin: 0 auto;
+      width: 600px;
+      
+      > .button {
+        margin: 50px 0;
+        padding: 10px 5px;
+      }
+    }
+    
+    .news-title {
+      color: #000000;
+      font: 300 30px / 66px "Open Sans";
+    }
+    
+    .news-date {
+      color: #d3b000;
+      font: 300 15px / 66px "Open Sans";
+    }
+    
+    .news-text {
+      color: rgba(2, 23, 37, 0.7);
+      font: 400 16px / 25px;
+    }
+  
+  .news-block {
+    width: 92%;
+    background-color: #fff;
+    margin: 100px 4%;
+    padding-bottom: 50px;
+    
+    > .news-icon {
+      padding-top: 50px;
+      width: 45%;
+      text-align: center;
+      float: left;
+    }
+    
+    
+    > .news-content {
+      padding-top: 50px;
+      float: right;
+      width: 45%;
+      margin: 0 auto;
+      
+      .news-text {
+        width: 90%;
+      }
+    }
+    
+  }
+  
+  .news-vidget {
+    width: 30%;
+    float: right;
+    .vidget-title {
+      width: 80%;
+      padding: 0 0 10px;
+      margin-bottom: 15px;
+      color: rgba(2, 23, 37, 0.7);
+      font: 300 23px / 32px "Open Sans";
+      border-bottom: 3px solid #d3b000;
+    }
+    
+    .vidget-section {
+      color: #021725;
+      font: italic 16px / 32px "Open Sans";
+      display: block;
+      text-decoration: none;
+      
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+  
 }
 
 footer {
