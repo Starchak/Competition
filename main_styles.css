@@ -118,7 +118,53 @@ header {
   width: 50%;
   margin: 150px auto; }
 
+.last-post {
+  width: 50%;
+  margin: 0 auto 100px; }
+
+.post {
+  width: 100%;
+  height: 390px; }
+  .post .post-img {
+    width: 49%;
+    float: left;
+    background: url(img/IMG.png);
+    height: 390px; }
+  .post .post-context {
+    width: 49%;
+    height: 390px;
+    float: right;
+    padding-left: 2%;
+    background-color: #f9f9f9; }
+    .post .post-context .date {
+      color: #505d68;
+      font: 400 13px / 60px "Open Sans"; }
+    .post .post-context .post-name {
+      color: #505d68;
+      font: 400 30px / 60px "Open Sans"; }
+    .post .post-context .post-text {
+      color: #505d68;
+      font: 300 16px / 24.7px "Open Sans"; }
+    .post .post-context > .button {
+      width: 8rem;
+      margin: 3rem 0 0;
+      padding: 10px 5px; }
+
 footer {
-  height: 200vh; }
+  height: 93px;
+  width: 100%;
+  background-color: #eeeeee;
+  color: #505d68;
+  font: 300 16px / 93px "Open Sans"; }
+  footer .footer-left {
+    width: 45%;
+    float: left;
+    text-align: right;
+    padding-right: 5%; }
+  footer .footer-right {
+    width: 45%;
+    float: right;
+    text-align: left;
+    padding-left: 5%; }
 
 /*# sourceMappingURL=main_styles.css.map */
