@@ -12,7 +12,7 @@ $menuBackground: #2D3035;
 .menu {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: -100vh;
   background: $menuBackground;
   text-align: center;
@@ -42,32 +42,39 @@ $menuBackground: #2D3035;
 }
 
 header {
-  .header-img {
-    width: 100%;
+  width: 100%;
     height: 100vh;
     background: url(img/cd-intro-bg.png) no-repeat center;
     background-size: cover;
-    position: absolute;
-    z-index: -100;
-  }
   
   .logo-img {
     width: 190px;
     height: 42px;
     background: url(img/cd-logo.png) no-repeat center;
     padding: 25px;
-    position: absolute;
+    position: fixed;
+    z-index: 101;
   }
   
   nav {
-    padding: 35px 35px 0 90%;
-    position: relative;
+    position: fixed;
     z-index: 100;
+    background: $menuBackground;
+    opacity: 0.5;
+    width: 100%;
+    height: 80px;
+    
+    .nav-conteiner {
+      margin: 27px 0 0 90%;
+      position: relative;
+      z-index: 200;
+    }
     
     a {
       color: #fff;
       text-decoration: none;
       cursor: pointer;
+      font-weight: 200;
       
       &:hover {
         text-decoration: underline;
@@ -75,7 +82,25 @@ header {
     }
     
     .menuI {
+      display: inline-block;
       cursor: pointer;
+      background: url(img/menu-lines.png);
+      width: 18px;
+      height: 18px;
+      background-size: cover;
+      position: relative;
+      top: 3px;
+    }
+    
+    .menuI-close {
+      display: inline-block;
+      cursor: pointer;
+      background: url(img/menu-x.png);
+      width: 18px;
+      height: 18px;
+      background-size: cover;
+      position: relative;
+      top: 3px;  
     }
     
   }
@@ -85,8 +110,12 @@ header {
     font-size: 80px;
     font-weight: 400;
     text-align: center;
-    margin-top: 19%;
+    padding-top: 19%;
   }
+}
+
+footer {
+  height: 200vh;
 }
 
 
