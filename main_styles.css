@@ -5,6 +5,7 @@
   width: 100%;
   height: 100vh;
   position: absolute;
+  top: -100vh;
   background: #2D3035;
   text-align: center; }
   .menu .menu-section {
@@ -42,9 +43,12 @@ header nav {
   z-index: 100; }
   header nav a {
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
     header nav a:hover {
       text-decoration: underline; }
+  header nav .menuI {
+    cursor: pointer; }
 header > .title {
   color: #fff;
   font-size: 80px;
