@@ -1,0 +1,31 @@
+* {
+  font-family: "Open Sans"; }
+
+header .header-img {
+  width: 100%;
+  height: 100vh;
+  background: url(img/cd-intro-bg.png) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  z-index: -100; }
+header .logo-img {
+  width: 190px;
+  height: 42px;
+  background: url(img/cd-logo.png) no-repeat center;
+  padding: 25px;
+  position: absolute; }
+header nav {
+  padding: 35px 35px 0 90%; }
+  header nav a {
+    color: #fff;
+    text-decoration: none; }
+    header nav a:hover {
+      text-decoration: underline; }
+header > .title {
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 19%; }
+
+/*# sourceMappingURL=main_styles.css.map */
