@@ -154,9 +154,9 @@ header {
   > .title {
     color: #fff;
     font-size: 80px;
-    font-weight: 400;
+    font-weight: 200;
     text-align: center;
-    padding-top: 19%;
+    padding-top: 25%;
   }
 }
 
@@ -223,18 +223,19 @@ header {
   .first-news {
     width: 62%;
     background-color: #fff;
-    margin: 0 4%;
+    margin: 50px 4%;
     float: left;
   }
   
   .news-icon {
       padding-top: 50px;
       text-align: center;
+      margin: 0 auto;
     }
     
     .news-content {
       margin: 0 auto;
-      width: 600px;
+      width: 90%;
       
       > .button {
         margin: 50px 0;
@@ -256,33 +257,6 @@ header {
       color: rgba(2, 23, 37, 0.7);
       font: 400 16px / 25px;
     }
-  
-  .news-block {
-    width: 92%;
-    background-color: #fff;
-    margin: 100px 4%;
-    padding-bottom: 50px;
-    
-    > .news-icon {
-      padding-top: 50px;
-      width: 45%;
-      text-align: center;
-      float: left;
-    }
-    
-    
-    > .news-content {
-      padding-top: 50px;
-      float: right;
-      width: 45%;
-      margin: 0 auto;
-      
-      .news-text {
-        width: 90%;
-      }
-    }
-    
-  }
   
   .news-vidget {
     width: 30%;
@@ -317,11 +291,21 @@ footer {
   color: #505d68;
   font: 300 16px / 93px "Open Sans";
   
+  a {
+      color: #505d68;
+      text-decoration: none;
+      
+      &:hover {
+        font-weight: 400;
+      }
+    }
+  
   .footer-left {
     width: 45%;
     float: left;
     text-align: right;
     padding-right: 5%;
+    
   }
   
   .footer-right {
@@ -330,6 +314,25 @@ footer {
     text-align: left;
     padding-left: 5%;
   }
+}
+
+
+@media screen and (max-width: 870px) {
+  
+  header nav .nav-conteiner {
+    margin-left: 85%;
+  }
+  
+  .news-section {
+    .first-news {
+      width: 90%;
+    }
+    
+    .news-vidget {
+      display: none;
+    }
+  }
+  
 }
 
 
