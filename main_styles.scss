@@ -1,3 +1,5 @@
+@import "bourbon/_bourbon.scss";
+
 $gold: #D4AF37;
 $menuBackground: #2D3035;
 
@@ -33,11 +35,11 @@ $menuBackground: #2D3035;
   text-align: center;
   margin: 25px auto;
   padding: 20px 10px;
-  border: 1px solid #021725; 
+  border: 1px solid #021725;
   width: 15rem;
   display: block;
   text-decoration: none;
-  
+
   &:hover {
     color: $gold;
     border-color: $gold;
@@ -51,17 +53,17 @@ $menuBackground: #2D3035;
   top: -100vh;
   background: $menuBackground;
   text-align: center;
-  
+
   .menu-section {
     color: #fff;
     margin: 30px 0 5px;
     font-weight: 400;
   }
-  
+
   #menu-first {
-    margin-top: 8%;
+    margin-top: 15%;
   }
-  
+
   a {
     color: $gold;
     font-size: 1.875rem;
@@ -69,7 +71,7 @@ $menuBackground: #2D3035;
     text-decoration: none;
     padding: 10px;
     display: block;
-    
+
     &:hover {
       font-weight: 500;
     }
@@ -85,12 +87,18 @@ $menuBackground: #2D3035;
 .news-header {
   background: url(img/Layer-1.png)no-repeat center;
   background-size: cover;
-  height: 60vh;
+  height: 70vh;
+}
+
+.about-header {
+  background: url(img/cd-intro-bg-about.png)center;
+  background-size: cover;
+  height: 70vh;
 }
 
 header {
   width: 100%;
-  
+
   .logo-img {
     width: 190px;
     height: 42px;
@@ -99,7 +107,7 @@ header {
     position: fixed;
     z-index: 101;
   }
-  
+
   nav {
     position: fixed;
     z-index: 100;
@@ -107,25 +115,25 @@ header {
     opacity: 0.5;
     width: 100%;
     height: 80px;
-    
+
     .nav-conteiner {
       margin: 27px 0 0 90%;
       position: relative;
       z-index: 200;
       opacity: 1;
     }
-    
+
     a {
       color: #fff;
       text-decoration: none;
       cursor: pointer;
       font-weight: 200;
-      
+
       &:hover {
         text-decoration: underline;
       }
     }
-    
+
     .menuI {
       display: inline-block;
       cursor: pointer;
@@ -134,10 +142,10 @@ header {
       height: 18px;
       background-size: cover;
       position: relative;
-      opacity: 1;             
+      opacity: 1;
       top: 3px;
     }
-    
+
     .menuI-close {
       display: inline-block;
       cursor: pointer;
@@ -146,11 +154,11 @@ header {
       height: 18px;
       background-size: cover;
       position: relative;
-      top: 3px;  
+      top: 3px;
     }
-    
+
   }
-  
+
   > .title {
     color: #fff;
     font-size: 80px;
@@ -176,32 +184,34 @@ header {
   .post-img {
     width: 49%;
     float: left;
-    background: url(img/IMG.png);
+    background: url(img/news_1.jpg);
+    background-position: right;
+    background-size: cover;
     height: 390px;
   }
-  
+
   .post-context {
     width: 49%;
     height: 390px;
     float: right;
     padding-left: 2%;
     background-color: #f9f9f9;
-    
+
     .date {
       color: #505d68;
       font: 400 13px / 60px "Open Sans";
     }
-    
+
     .post-name {
       color: #505d68;
       font: 400 30px / 60px "Open Sans";
     }
-    
+
     .post-text {
       color: #505d68;
       font: 300 16px / 24.7px "Open Sans";
     }
-    
+
     >.button {
       width: 8rem;
       margin: 3rem 0 0;
@@ -219,45 +229,45 @@ header {
   margin: 50px auto;
   padding: 25px 0;
   background-color: #f9f9f9;
-  
+
   .first-news {
     width: 62%;
     background-color: #fff;
     margin: 50px 4%;
     float: left;
   }
-  
+
   .news-icon {
       padding-top: 50px;
       text-align: center;
       margin: 0 auto;
     }
-    
+
     .news-content {
       margin: 0 auto;
       width: 90%;
-      
+
       > .button {
         margin: 50px 0;
         padding: 10px 5px;
       }
     }
-    
+
     .news-title {
       color: #000000;
       font: 300 30px / 66px "Open Sans";
     }
-    
+
     .news-date {
       color: #d3b000;
       font: 300 15px / 66px "Open Sans";
     }
-    
+
     .news-text {
       color: rgba(2, 23, 37, 0.7);
       font: 400 16px / 25px;
     }
-  
+
   .news-vidget {
     width: 30%;
     float: right;
@@ -269,19 +279,79 @@ header {
       font: 300 23px / 32px "Open Sans";
       border-bottom: 3px solid #d3b000;
     }
-    
+
     .vidget-section {
       color: #021725;
       font: italic 16px / 32px "Open Sans";
       display: block;
       text-decoration: none;
-      
+
       &:hover {
         color: $gold;
       }
     }
   }
-  
+
+}
+
+.about-section {
+  width: 70%;
+  text-align: center;
+  margin: 100px auto;
+  .about-text {
+    color: rgba(2, 23, 37, 0.7);
+    font: 300 18px / 30px "Open Sans";
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-section {
+    width: 90%;
+  }
+}
+
+.one-news-section {
+  background: #f9f9f9;
+  width: 90%;
+  margin: 50px auto;
+
+  .one-news-wrapper {
+    padding: 50px 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .one-news-img {
+    text-align: center;
+  }
+
+  .one-news-title {
+    color: #000000;
+    font: 300 30px "Open Sans";
+    padding: 50px 0 0;
+  }
+
+  .one-news-date {
+    color: #d3b000;
+    font: 300 15px "Open Sans";
+    padding-bottom: 50px;
+  }
+
+  .one-news-text {
+    color: rgba(2, 23, 37, 0.7);
+    font: 400 16px;
+    line-height: 1.5em;
+    padding-bottom: 25px;
+
+    ol {
+      list-style-type: decimal;
+      padding-left: 20px;
+    }
+
+    li {
+      padding: 15px 0;
+    }
+  }
 }
 
 footer {
@@ -290,24 +360,24 @@ footer {
   background-color: #eeeeee;
   color: #505d68;
   font: 300 16px / 93px "Open Sans";
-  
+
   a {
-      color: #505d68;
-      text-decoration: none;
-      
-      &:hover {
-        font-weight: 400;
-      }
+    color: #505d68;
+    text-decoration: none;
+
+    &:hover {
+      font-weight: 400;
     }
-  
+  }
+
   .footer-left {
     width: 45%;
     float: left;
     text-align: right;
     padding-right: 5%;
-    
+
   }
-  
+
   .footer-right {
     width: 45%;
     float: right;
@@ -316,50 +386,51 @@ footer {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .last-post {
+    width: 80%;
+  }
+
+  .who-we-are {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: auto;
+
+    .footer-left {
+      float: none;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+
+    .footer-right {
+      float: none;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+
 
 @media screen and (max-width: 870px) {
-  
+
   header nav .nav-conteiner {
     margin-left: 85%;
   }
-  
+
   .news-section {
     .first-news {
       width: 90%;
     }
-    
+
     .news-vidget {
       display: none;
     }
   }
-  
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
